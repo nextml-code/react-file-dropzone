@@ -25,7 +25,7 @@ const FileDropzone = ({ onChange }) => {
       <Label htmlFor="file-upload">
         {state.isDragging
           ? "Now is the time! Drop the files."
-          : "Drag files here or click to upload"}
+          : "Drop files here or click to browse"}
         <input
           type="file"
           onChange={handleOnChange(onChange)}
