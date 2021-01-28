@@ -9,7 +9,7 @@ import {
   preventDefault,
 } from "./core/events";
 
-const FileDropzone = ({ onChange }) => {
+const FileDropzone = ({ onChange, passiveText, activeText }) => {
   const [state, setState] = useState({
     isDragging: false,
   });
@@ -24,8 +24,8 @@ const FileDropzone = ({ onChange }) => {
     >
       <Label htmlFor="file-upload">
         {state.isDragging
-          ? "Now is the time! Drop the files."
-          : "Drop files here or click to browse"}
+          ? activeText || "Now is the time! Drop the files."
+          : passiveText || "Drop files here or click to browse"}
         <input
           type="file"
           onChange={handleOnChange(onChange)}
