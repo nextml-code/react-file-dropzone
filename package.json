@@ -4,9 +4,9 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aiwizo/react-file-upload.git"
+    "url": "https://github.com/Aiwizo/react-file-dropzone.git"
   },
-  "homepage": "https://github.com/Aiwizo/react-file-upload",
+  "homepage": "https://github.com/Aiwizo/react-file-dropzone",
   "license": "Apache-2.0",
   "scripts": {
     "test": "jest",
@@ -43,13 +43,11 @@
     "react-is": "^16.13.1",
     "rollup": "^2.26.8",
     "rollup-plugin-peer-deps-external": "^2.2.3",
-    "styled-components": "^5.2.1",
-    "uuid": "^8.3.0"
+    "styled-components": "^5.2.1"
   },
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "uuid": "^8.3.0",
     "styled-components": "^5.2.1"
   },
   "husky": {
