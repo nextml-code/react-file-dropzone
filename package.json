@@ -58,5 +58,7 @@
   "lint-staged": {
     "**/*.{js,jsx,css,md}": "prettier --write"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@aiwizo/application-styles": "0.0.1"
+  }
 }
