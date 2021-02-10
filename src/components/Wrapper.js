@@ -3,21 +3,26 @@ import styled, { css } from "styled-components";
 const Wrapper = styled.form`
   display: flex;
   flex-direction: column;
-  font-family: var(--aiwizo-application-default-font);
-  background-color: var(--aiwizo-application-light-background-blue);
   align-items: center;
-  font-weight: 900;
-  font-size: var(--aiwizo-application-font-size-big);
-  color: #111;
-  border-radius: var(--aiwizo-application-border-radius-primary);
   cursor: pointer;
-  border: 1px solid var(--aiwizo-application-primary-border-blue);
+
+  font-weight: ${(props) => props.styles.fontWeight};
+  color: ${(props) => props.styles.color};
+  font-family: ${(props) => props.styles.fontFamily};
+  background-color: ${(props) => props.styles.backgroundColor};
+  font-size: ${(props) => props.styles.fontSize};
+  border: ${(props) => props.styles.border};
+  border-top-left-radius: ${(props) => props.styles.borderTopLeftRadius};
+  border-top-right-radius: ${(props) => props.styles.borderTopRightRadius};
+  border-bottom-right-radius: ${(props) =>
+    props.styles.borderBottomRightRadius};
+  border-bottom-left-radius: ${(props) => props.styles.borderBottomLeftRadius};
 
   ${(props) =>
     props.dragging &&
     css`
-      background-color: var(--aiwizo-application-blue);
-      color: #ffffff;
+      color: ${(props) => props.styles.colorDragging};
+      background-color: ${(props) => props.styles.backgroundColorDragging};
     `}
 `;
 

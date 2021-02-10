@@ -20,4 +20,9 @@ Secondary.args = {
   onChange: console.log,
   passiveText: "Hello",
   activeText: "World",
+  styles: {
+    border: "2px dashed red",
+    fontWeight: 300,
+    backgroundColorDragging: "green",
+  },
 };
