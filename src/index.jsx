@@ -9,6 +9,8 @@ import {
   preventDefault,
 } from "./core/events";
 
+import "@aiwizo/application-styles";
+
 const FileDropzone = ({ onChange, passiveText, activeText }) => {
   const [state, setState] = useState({
     isDragging: false,
