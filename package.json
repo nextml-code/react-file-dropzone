@@ -1,6 +1,13 @@
 {
   "name": "@aiwizo/react-file-dropzone",
   "version": "0.0.3",
+  "description": "React component for selecting files",
+  "keywords": [
+    "react",
+    "dropzone",
+    "file",
+    "files"
+  ],
   "main": "index.js",
   "repository": {
     "type": "git",
