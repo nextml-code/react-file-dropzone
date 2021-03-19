@@ -17,9 +17,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "test": "jest",
-    "build": "npm run build:dev && npm run build:prod",
-    "build:prod": "NODE_ENV=production rollup --config",
-    "build:dev": "NODE_ENV=development rollup --config",
+    "build": "rollup --config",
     "build:local": "npm run build && npm pack",
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
