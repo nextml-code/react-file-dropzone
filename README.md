@@ -7,7 +7,7 @@ File dropzone component for React.
 ## Installation
 
 ```
-npm install @aiwizo/react-file-dropzone
+npm install @aiwizo/react-file-dropzone @aiwizo/application-styles
 ```
 
 ## Basic Usage
