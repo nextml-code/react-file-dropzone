@@ -6,14 +6,12 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import json from "@rollup/plugin-json";
 import postcss from "rollup-plugin-postcss";
 
-const outputFile = "./lib/index.js";
-
 const extensions = [".js", ".jsx"];
 
 export default {
   input: "./src/index.jsx",
   output: {
-    file: outputFile,
+    file: "./lib/index.js",
     format: "cjs",
     globals: {
       react: "React",
