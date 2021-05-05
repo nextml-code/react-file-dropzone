@@ -1,5 +1,6 @@
 import React from "react";
 
+import "@aiwizo/application-styles";
 import FileDropzone from "../";
 
 export default {

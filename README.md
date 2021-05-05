@@ -14,15 +14,14 @@ npm install @aiwizo/react-file-dropzone @aiwizo/application-styles
 
 ```javascript
 // Importing
+import "@aiwizo/application-styles";
 import FileDropzone from "@aiwizo/react-file-dropzone";
-```
 
-```javascript
 <FileUpload
   onChange={({ event, files }) => {
     /* Do something */
   }}
-/>
+/>;
 ```
 
 Make sure that the peer dependencies in `package.json` are installed in your application.

@@ -9,8 +9,6 @@ import {
   preventDefault,
 } from "./core/events";
 
-import "@aiwizo/application-styles";
-
 const defaultStyles = {
   fontFamily: "var(--aiwizo-application-default-font)",
   fontWeight: 900,
