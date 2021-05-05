@@ -25,6 +25,7 @@ export default {
     /@babel\/runtime/,
     "styled-components",
     /@fortawesome\//,
+    "@aiwizo/application-styles",
   ],
   plugins: [
     peerDepsExternal(),
