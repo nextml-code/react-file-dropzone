@@ -24,6 +24,7 @@
     "format": "prettier \"**/*.{js,jsx,css,md}\" --write"
   },
   "devDependencies": {
+    "@aiwizo/application-styles": "^0.0.4",
     "@babel/core": "^7.11.4",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.0",
@@ -53,6 +54,7 @@
     "styled-components": "^5.2.1"
   },
   "peerDependencies": {
+    "@aiwizo/application-styles": "^0.0.4",
     "react": "^16.14.0 || ^17.0.0",
     "react-dom": "^16.14.0 || ^17.0.0",
     "styled-components": "^5.2.1"
@@ -64,8 +66,5 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,css,md}": "prettier --write"
-  },
-  "dependencies": {
-    "@aiwizo/application-styles": "^0.0.4"
   }
 }
