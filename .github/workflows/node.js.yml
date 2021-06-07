@@ -11,11 +11,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x, 14.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -28,4 +28,4 @@ jobs:
       - run: npm test
       - run: npm publish --access public --dry-run
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_READ_PUBLISH}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN_READ_PUBLISH }}
