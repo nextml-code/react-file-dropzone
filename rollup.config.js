@@ -24,7 +24,6 @@ export default {
     "react-dom",
     /@babel\/runtime/,
     "styled-components",
-    /@fortawesome\//,
     "@aiwizo/application-styles",
   ],
   plugins: [
