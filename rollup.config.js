@@ -4,14 +4,14 @@ import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import json from "@rollup/plugin-json";
-import postcss from "rollup-plugin-postcss";
+const packageJson = require("./package.json");
 
 const extensions = [".js", ".jsx"];
 
 export default {
   input: "./src/index.jsx",
   output: {
-    file: "./lib/index.js",
+    file: packageJson.main,
     format: "cjs",
     globals: {
       react: "React",
@@ -28,9 +28,6 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
-    postcss({
-      plugins: [],
-    }),
     json(),
     replace({
       preventAssignment: true,
