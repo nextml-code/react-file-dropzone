@@ -8,7 +8,7 @@
     "file",
     "files"
   ],
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Aiwizo/react-file-dropzone.git"
@@ -44,13 +44,12 @@
     "jest": "^26.4.2",
     "lint-staged": "^10.2.13",
     "postcss": "^8.2.5",
-    "prettier": "^2.1.1",
+    "prettier": "^2.3.1",
     "react": "^16.14.0 || ^17.0.0",
     "react-dom": "^16.14.0 || ^17.0.0",
     "react-is": "^16.14.0 || ^17.0.0",
     "rollup": "^2.26.8",
     "rollup-plugin-peer-deps-external": "^2.2.3",
-    "rollup-plugin-postcss": "^4.0.0",
     "styled-components": "^5.2.1"
   },
   "peerDependencies": {

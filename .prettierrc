@@ -1,2 +1,3 @@
 # Prettier configuration
 trailingComma: "all"
+arrowParens: "always"
