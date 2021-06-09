@@ -1,6 +1,22 @@
 import styled, { css } from "styled-components";
 
-const Wrapper = styled.form`
+export const defaultStyles = {
+  fontFamily: "var(--aiwizo-application-default-font)",
+  fontWeight: 900,
+  color: "var(--aiwizo-application-black)",
+  colorDragging: "var(--aiwizo-application-white)",
+  backgroundColor: "var(--aiwizo-application-light-background-blue)",
+  backgroundColorDragging: "var(--aiwizo-application-blue)",
+  fontSize: "var(--aiwizo-application-font-size-big)",
+  border: "1px solid var(--aiwizo-application-primary-border-blue)",
+  borderTopLeftRadius: "var(--aiwizo-application-border-radius-primary)",
+  borderTopRightRadius: "var(--aiwizo-application-border-radius-primary)",
+  borderBottomRightRadius: "var(--aiwizo-application-border-radius-primary)",
+  borderBottomLeftRadius: "var(--aiwizo-application-border-radius-primary)",
+  padding: "var(--aiwizo-application-spacing-medium)",
+};
+
+export const Wrapper = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,5 +41,3 @@ const Wrapper = styled.form`
       background-color: ${(props) => props.styles.backgroundColorDragging};
     `}
 `;
-
-export default Wrapper;
