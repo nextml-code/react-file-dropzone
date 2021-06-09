@@ -1,6 +1,6 @@
 import babel from "@rollup/plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
-import commonjs from "@rollup/plugin-commonjs";
+// import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import json from "@rollup/plugin-json";
@@ -11,8 +11,9 @@ const extensions = [".js", ".jsx"];
 export default {
   input: "./src/index.jsx",
   output: {
+    name: "FileDropzone",
     file: packageJson.main,
-    format: "cjs",
+    format: "umd",
     globals: {
       react: "React",
       "react-dom": "ReactDOM",
@@ -53,6 +54,6 @@ export default {
     resolve({
       extensions,
     }),
-    commonjs(),
+    // commonjs(),
   ],
 };
