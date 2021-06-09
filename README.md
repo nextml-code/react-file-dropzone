@@ -7,7 +7,7 @@ File dropzone component for React.
 ## Installation
 
 ```
-npm install @aiwizo/react-file-dropzone @aiwizo/application-styles
+npm install @aiwizo/react-file-dropzone @aiwizo/application-styles styled-components
 ```
 
 ## Basic Usage
@@ -15,7 +15,7 @@ npm install @aiwizo/react-file-dropzone @aiwizo/application-styles
 ```javascript
 // Importing
 import "@aiwizo/application-styles";
-import FileDropzone from "@aiwizo/react-file-dropzone";
+import { FileDropzone } from "@aiwizo/react-file-dropzone";
 
 <FileUpload
   onChange={({ event, files }) => {
