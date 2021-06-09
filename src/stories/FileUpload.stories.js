@@ -1,7 +1,7 @@
 import React from "react";
 
 import "@aiwizo/application-styles";
-import FileDropzone from "../";
+import { FileDropzone } from "../";
 
 export default {
   title: "File Dropzone",

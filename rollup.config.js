@@ -16,8 +16,9 @@ export default {
     globals: {
       react: "React",
       "react-dom": "ReactDOM",
+      "styled-components": "styled",
     },
-    exports: "auto",
+    exports: "named",
   },
   external: [
     "react",

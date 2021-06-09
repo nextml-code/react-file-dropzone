@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Label from "./components/Label";
-import Wrapper from "./components/Wrapper";
+import { Label } from "./components/Label";
+import { Wrapper, defaultStyles } from "./components/Wrapper";
 import {
   handleDragEnter,
   handleDragExit,
@@ -9,23 +9,12 @@ import {
   preventDefault,
 } from "./core/events";
 
-const defaultStyles = {
-  fontFamily: "var(--aiwizo-application-default-font)",
-  fontWeight: 900,
-  color: "var(--aiwizo-application-black)",
-  colorDragging: "var(--aiwizo-application-white)",
-  backgroundColor: "var(--aiwizo-application-light-background-blue)",
-  backgroundColorDragging: "var(--aiwizo-application-blue)",
-  fontSize: "var(--aiwizo-application-font-size-big)",
-  border: "1px solid var(--aiwizo-application-primary-border-blue)",
-  borderTopLeftRadius: "var(--aiwizo-application-border-radius-primary)",
-  borderTopRightRadius: "var(--aiwizo-application-border-radius-primary)",
-  borderBottomRightRadius: "var(--aiwizo-application-border-radius-primary)",
-  borderBottomLeftRadius: "var(--aiwizo-application-border-radius-primary)",
-  padding: "var(--aiwizo-application-spacing-medium)",
-};
-
-const FileDropzone = ({ onChange, passiveText, activeText, styles = {} }) => {
+export const FileDropzone = ({
+  onChange,
+  passiveText,
+  activeText,
+  styles = {},
+}) => {
   const [state, setState] = useState({
     isDragging: false,
   });
@@ -62,5 +51,3 @@ const FileDropzone = ({ onChange, passiveText, activeText, styles = {} }) => {
     </Wrapper>
   );
 };
-
-export default FileDropzone;
