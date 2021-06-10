@@ -1,10 +1,7 @@
 import babel from "@rollup/plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
-// import commonjs from "@rollup/plugin-commonjs";
-import replace from "@rollup/plugin-replace";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import json from "@rollup/plugin-json";
-const packageJson = require("./package.json");
+import packageJson from "./package.json";
 
 const extensions = [".js", ".jsx"];
 
@@ -30,10 +27,6 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
-    json(),
-    replace({
-      preventAssignment: true,
-    }),
     babel({
       exclude: "node_modules/**",
       presets: [
@@ -54,6 +47,5 @@ export default {
     resolve({
       extensions,
     }),
-    // commonjs(),
   ],
 };
