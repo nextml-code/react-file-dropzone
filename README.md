@@ -24,6 +24,30 @@ import { FileDropzone } from "@aiwizo/react-file-dropzone";
 />;
 ```
 
+### Custom styling
+
+Its possible to override the following default styles
+
+```javascript
+<FileUpload
+  styles={
+    backgroundColorDragging,
+    backgroundColor,
+    border,
+    borderTopLeftRadius,
+    borderTopRightRadius,
+    borderBottomRightRadius,
+    borderBottomLeftRadius,
+    color,
+    colorDragging,
+    fontFamily,
+    fontSize,
+    fontWeight,
+    padding,
+  }
+/>;
+```
+
 Make sure that the peer dependencies in `package.json` are installed in your application.
 
 ## Contribution
