@@ -1,6 +1,6 @@
 {
   "name": "@aiwizo/react-file-dropzone",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "React component for selecting files",
   "keywords": [
     "react",
